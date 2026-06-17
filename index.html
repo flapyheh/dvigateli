@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#14181f">
+<title>MotorPro — контрактные двигатели с гарантией. Доставка по РФ</title>
+<meta name="description" content="Контрактные двигатели из Японии, Кореи и Европы. Проверка перед отправкой, видеоотчёт, гарантия до 12 месяцев. Москва, доставка ТК по России.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ТОП-БАР -->
+<div class="top-bar">
+    <div class="container">
+        <div class="top-bar-info">
+            <a href="#contacts">Москва, ул. Автозаводская, 23</a>
+            <a href="#contacts">Пн–Сб с 9:00 до 20:00</a>
+            <a href="#">Самовывоз со склада</a>
+        </div>
+        <div>
+            <a href="tel:+74951234567" class="phone">+7 (495) 123-45-67</a>
+        </div>
+    </div>
+</div>
+
+<!-- ШАПКА -->
+<header>
+    <div class="container header-inner">
+        <a href="#" class="logo" aria-label="MotorPro — на главную">
+            <div class="logo-mark">M</div>
+            <div class="logo-text">
+                <span class="logo-name">MotorPro</span>
+                <span class="logo-sub">контрактные ДВС</span>
+            </div>
+        </a>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="#catalog" onclick="closeMobileMenu()">Каталог</a></li>
+                <li><a href="#about" onclick="closeMobileMenu()">О нас</a></li>
+                <li><a href="#delivery" onclick="closeMobileMenu()">Доставка</a></li>
+                <li><a href="#guarantee" onclick="closeMobileMenu()">Гарантия</a></li>
+                <li><a href="#contacts" onclick="closeMobileMenu()">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button class="icon-btn search-btn" title="Поиск" aria-label="Поиск">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            </button>
+            <button class="icon-btn cart-btn" onclick="toggleCart()" title="Корзина" aria-label="Корзина">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                <span class="cart-count" id="cartCount">0</span>
+            </button>
+            <button class="icon-btn burger-btn" onclick="toggleMobileMenu()" aria-label="Меню" id="burgerBtn">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- ГЛАВНЫЙ ЭКРАН -->
+<section class="hero">
+    <div class="container hero-inner">
+        <div class="hero-content">
+            <span class="hero-badge">Работаем с 2009 года</span>
+            <h1>Контрактные двигатели<br>с реальным пробегом<br>и <span class="accent">гарантией</span></h1>
+            <p>Привозим ДВС из Японии, Кореи и Европы. Перед продажей — обязательная компрессометрия, эндоскопия и тестовый запуск. Скрутки пробегов и «котов в мешке» у нас не бывает.</p>
+            <div class="hero-buttons">
+                <a href="#catalog" class="btn btn-primary">Смотреть каталог</a>
+                <a href="#about" class="btn btn-outline">Как мы работаем</a>
+            </div>
+            <div class="hero-stats">
+                <div>
+                    <div class="stat-value">15<sup>+</sup></div>
+                    <div class="stat-label">лет на рынке</div>
+                </div>
+                <div>
+                    <div class="stat-value">1240</div>
+                    <div class="stat-label">ДВС на складе</div>
+                </div>
+                <div>
+                    <div class="stat-value">до 12 мес.</div>
+                    <div class="stat-label">гарантия</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-image-frame">
+                <div class="hero-image-tag hero-image-tag-1">
+                    <span class="dot"></span>
+                    <span><strong>В наличии</strong> — отправка сегодня</span>
+                </div>
+                <div class="hero-image-tag hero-image-tag-2">
+                    <strong>Видеоотчёт</strong> о запуске
+                </div>
+                <svg class="engine-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="metal" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#4a5568"/>
+                            <stop offset="50%" stop-color="#2d3748"/>
+                            <stop offset="100%" stop-color="#1a202c"/>
+                        </linearGradient>
+                        <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#d22630"/>
+                            <stop offset="100%" stop-color="#b51d26"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="80" y="120" width="240" height="180" rx="10" fill="url(#metal)" stroke="#000" stroke-width="2"/>
+                    <rect x="100" y="60" width="40" height="80" rx="4" fill="url(#metal)"/>
+                    <rect x="150" y="60" width="40" height="80" rx="4" fill="url(#metal)"/>
+                    <rect x="210" y="60" width="40" height="80" rx="4" fill="url(#metal)"/>
+                    <rect x="260" y="60" width="40" height="80" rx="4" fill="url(#metal)"/>
+                    <circle cx="120" cy="75" r="11" fill="url(#accent)"/>
+                    <circle cx="170" cy="75" r="11" fill="url(#accent)"/>
+                    <circle cx="230" cy="75" r="11" fill="url(#accent)"/>
+                    <circle cx="280" cy="75" r="11" fill="url(#accent)"/>
+                    <rect x="60" y="170" width="30" height="80" rx="4" fill="#1a202c"/>
+                    <rect x="310" y="170" width="30" height="80" rx="4" fill="#1a202c"/>
+                    <circle cx="100" cy="140" r="3.5" fill="#718096"/>
+                    <circle cx="300" cy="140" r="3.5" fill="#718096"/>
+                    <circle cx="100" cy="280" r="3.5" fill="#718096"/>
+                    <circle cx="300" cy="280" r="3.5" fill="#718096"/>
+                    <rect x="140" y="180" width="120" height="60" rx="6" fill="#2d3748" stroke="#4a5568" stroke-width="1.5"/>
+                    <text x="200" y="217" text-anchor="middle" fill="#d22630" font-size="18" font-weight="bold" font-family="Arial, sans-serif">MOTOR</text>
+                    <path d="M 80 300 L 320 300 L 290 340 L 110 340 Z" fill="#1a202c"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ПРЕИМУЩЕСТВА -->
+<section class="features">
+    <div class="container">
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-num">01 —</div>
+                <h3>Свой склад в Москве</h3>
+                <p>Не посредники. Двигатель можно осмотреть лично перед оплатой, приехать на склад.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-num">02 —</div>
+                <h3>Проверка перед отправкой</h3>
+                <p>Компрессия, эндоскопия цилиндров, тестовый запуск. Снимаем видео для клиента.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-num">03 —</div>
+                <h3>Отправка по всей РФ</h3>
+                <p>Деловые Линии, ПЭК, Кит. Упаковка в обрешётку — фиксируем за свой счёт.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-num">04 —</div>
+                <h3>Возврат, если не подошёл</h3>
+                <p>Если двигатель не подошёл по номеру или есть скрытые дефекты — забираем обратно.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- КАТАЛОГ -->
+<section class="section" id="catalog">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-header-left">
+                <div class="section-eyebrow">Каталог</div>
+                <h2>Двигатели в наличии на складе</h2>
+                <p>Ниже — выборка из того, что есть прямо сейчас. На сайте отображается не всё, поэтому если нужного двигателя не видите — позвоните, мы посмотрим по базе.</p>
+            </div>
+            <a href="tel:+74951234567" class="btn btn-ghost">Уточнить наличие</a>
+        </div>
+
+        <div class="filters-wrap">
+            <div class="filters" id="filters">
+                <button class="filter-btn active" data-filter="all">Все марки</button>
+                <button class="filter-btn" data-filter="hyundai">Hyundai / Kia</button>
+                <button class="filter-btn" data-filter="toyota">Toyota</button>
+                <button class="filter-btn" data-filter="vw">VW / Audi</button>
+                <button class="filter-btn" data-filter="chevrolet">Chevrolet / Opel</button>
+                <button class="filter-btn" data-filter="nissan">Nissan</button>
+            </div>
+        </div>
+
+        <div class="products" id="productsGrid"></div>
+    </div>
+</section>
+
+<!-- О КОМПАНИИ -->
+<section class="about-block" id="about">
+    <div class="container about-grid">
+        <div>
+            <div class="section-eyebrow">О компании</div>
+            <h2>Не очередной перекуп — работаем с поставщиками напрямую с 2009 года</h2>
+            <p>MotorPro вырос из небольшой автомастерской в Печатниках. Сначала мы привозили ДВС для своих клиентов, потом — для соседних сервисов, а сейчас держим складскую программу на 1200+ позиций и отгружаем мотористам по всей стране.</p>
+            <p>Каждый двигатель, который к нам приходит, попадает в дефектовку до того, как окажется в продаже. Мы лучше откажемся от партии, чем потом будем разбираться с возвратами — это банально дешевле.</p>
+            <ul class="info-list">
+                <li>Контрактные ДВС из Японии, Кореи, Германии — без «евро-распилов»</li>
+                <li>Реальный пробег подтверждаем по таможенным документам</li>
+                <li>Перед отправкой — компрессия, эндоскопия, запуск на стенде</li>
+                <li>Гарантия от 3 до 12 месяцев в зависимости от модели</li>
+                <li>Доставка до терминала ТК в вашем городе бесплатно</li>
+                <li>Помогаем с подбором под VIN и заменой в проверенных сервисах</li>
+            </ul>
+        </div>
+        <div class="info-card" id="contacts">
+            <h3>Подобрать двигатель под VIN</h3>
+            <p class="info-card-text">Оставьте контакты — пришлём подходящие варианты с фото, ценой и сроком отгрузки. Без спама и «прозвонов с подменных номеров».</p>
+            <form onsubmit="submitConsult(event)">
+                <div class="form-group">
+                    <label for="cn">Как к вам обращаться</label>
+                    <input id="cn" type="text" required placeholder="Например, Алексей">
+                </div>
+                <div class="form-group">
+                    <label for="cp">Телефон или Telegram</label>
+                    <input id="cp" type="tel" required placeholder="+7 ___ ___-__-__">
+                </div>
+                <div class="form-group">
+                    <label for="cc">Авто и VIN (если знаете)</label>
+                    <input id="cc" type="text" required placeholder="Toyota Camry 2015, VIN опционально">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
+                <div class="info-card-foot">
+                    Нажимая кнопку, вы соглашаетесь с <a href="#">обработкой персональных данных</a>. Перезваниваем в рабочее время в течение 15–30 минут.
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="delivery">
+    <div class="container cta-inner">
+        <div>
+            <h2>Нужного двигателя нет в каталоге?</h2>
+            <p>Под заказ возим из Японии и Кореи — срок 3–5 недель. Пришлите VIN или номер двигателя, посчитаем стоимость с доставкой до вашего города.</p>
+        </div>
+        <div class="cta-actions">
+            <a href="tel:+74951234567" class="btn btn-light">+7 (495) 123-45-67</a>
+            <a href="https://t.me/" class="btn btn-outline">Написать в Telegram</a>
+        </div>
+    </div>
+</section>
+
+<!-- ФУТЕР -->
+<footer id="guarantee">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <a href="#" class="logo">
+                    <div class="logo-mark">M</div>
+                    <div class="logo-text">
+                        <span class="logo-name logo-name-light">MotorPro</span>
+                        <span class="logo-sub">контрактные ДВС</span>
+                    </div>
+                </a>
+                <p>Поставка и продажа контрактных двигателей с 2009 года. Свой склад в Москве, отгрузка по РФ. ИП Соколов Д. А., ОГРНИП 31477464…</p>
+            </div>
+            <div>
+                <h4>Каталог</h4>
+                <ul>
+                    <li><a href="#catalog">Hyundai / Kia</a></li>
+                    <li><a href="#catalog">Toyota</a></li>
+                    <li><a href="#catalog">Volkswagen / Audi</a></li>
+                    <li><a href="#catalog">Chevrolet / Opel</a></li>
+                    <li><a href="#catalog">Nissan</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Покупателю</h4>
+                <ul>
+                    <li><a href="#about">О компании</a></li>
+                    <li><a href="#delivery">Доставка и оплата</a></li>
+                    <li><a href="#guarantee">Условия гарантии</a></li>
+                    <li><a href="#">Возврат и обмен</a></li>
+                    <li><a href="#">Отзывы клиентов</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <ul class="footer-contacts">
+                    <li>
+                        <div>
+                            <span class="label">Телефон</span>
+                            <a href="tel:+74951234567" class="value">+7 (495) 123-45-67</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="label">Почта</span>
+                            <a href="mailto:zakaz@motorpro.ru" class="value">zakaz@motorpro.ru</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="label">Адрес склада</span>
+                            <span class="value">Москва, ул. Автозаводская, 23, стр. 4</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2009–2026, MotorPro. Цены на сайте носят информационный характер и не являются публичной офертой.</span>
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+    </div>
+</footer>
+
+<!-- КОРЗИНА -->
+<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Корзина">
+    <div class="cart-header">
+        <h3>Корзина <span id="cartHeaderCount"></span></h3>
+        <button class="cart-close" onclick="toggleCart()" aria-label="Закрыть">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer" id="cartFooter" hidden>
+        <div class="cart-total">
+            <span>Итого, без доставки</span>
+            <strong id="cartTotal">0 ₽</strong>
+        </div>
+        <button class="btn btn-primary btn-block" onclick="openCheckout()">Оформить заказ</button>
+        <div class="cart-note">Стоимость доставки рассчитает менеджер после подтверждения заказа</div>
+    </div>
+</aside>
+
+<!-- ОФОРМЛЕНИЕ -->
+<div class="modal-overlay" id="checkoutModal" onclick="onModalBgClick(event)">
+    <div class="modal" role="dialog" aria-modal="true">
+        <div class="modal-header">
+            <h3>Оформление заказа</h3>
+            <button class="cart-close" onclick="closeCheckout()" aria-label="Закрыть">✕</button>
+        </div>
+        <div class="modal-body" id="checkoutBody">
+            <form onsubmit="submitOrder(event)">
+                <div class="form-group">
+                    <label for="fn">ФИО получателя</label>
+                    <input id="fn" type="text" required placeholder="Иванов Иван Иванович">
+                </div>
+                <div class="form-group">
+                    <label for="fp">Телефон</label>
+                    <input id="fp" type="tel" required placeholder="+7 ___ ___-__-__">
+                </div>
+                <div class="form-group">
+                    <label for="fe">E-mail</label>
+                    <input id="fe" type="email" required placeholder="name@example.ru">
+                </div>
+                <div class="form-group">
+                    <label for="fc">Город получения</label>
+                    <input id="fc" type="text" required placeholder="Например, Краснодар">
+                </div>
+                <div class="form-group">
+                    <label for="fpay">Удобный способ оплаты</label>
+                    <select id="fpay">
+                        <option>Безналом по счёту (ИП/ООО)</option>
+                        <option>Картой онлайн</option>
+                        <option>Наличными при получении в Москве</option>
+                        <option>Наложенный платёж (после согласования)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fcom">Комментарий</label>
+                    <textarea id="fcom" placeholder="VIN, номер двигателя, удобное время для звонка"></textarea>
+                </div>
+                <div class="checkout-summary">
+                    <span>К оплате</span>
+                    <span id="checkoutTotal" class="checkout-summary-total">0 ₽</span>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Подтвердить заказ</button>
+                <div class="info-card-foot" style="margin-top: 12px;">
+                    После отправки с вами свяжется менеджер, уточнит детали и подтвердит стоимость доставки.
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- ТОСТ -->
+<div class="toast" id="toast">
+    <div class="toast-icon">✓</div>
+    <span id="toastText">Товар добавлен в корзину</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
